@@ -1,0 +1,57 @@
+/* styles.css */
+
+/* Загальні стилі для контейнера із постерами */
+.poster-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Розташування елементів уздовж головної (горизонтальної) вісі */
+  }
+  
+ /* styles.css */
+
+ .poster-item {
+    margin: 10px;
+    padding: 5px;
+    width: calc(16.66% - 20px); /* 16.66% ширина від екрану, відступи 10px по боках */
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px; /* Закруглення кутів */
+    background-image: url('https://static.vecteezy.com/system/resources/thumbnails/009/287/681/small/black-fabric-texture-background-vector.jpg');
+
+    /* background-image: url('https://txtrs.ru/textures/wood/wood-1.jpg'); Шлях до вашого файлу текстури дерева */
+    background-size: cover;
+    box-shadow: 0 0 20px rgba(222, 28, 28, 0.5); /* Тінь для створення ефекту обрамлення */
+    transition: transform 0.3s ease; /* Додаємо плавну анімацію для збільшення */
+
+  }
+  .poster-item:hover {
+    transform: scale(1.05); /* Збільшуємо розмір при наведенні */
+  }
+  
+  .posterimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  
+  .poster-img-container {
+    height: 300px; /* або інший бажаний розмір */
+    overflow: hidden;
+  }
+  
+  .posterimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .poster-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: center;
+  }
